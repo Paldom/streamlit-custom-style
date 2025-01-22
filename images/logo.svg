@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    width="370"
+    height="100"
+    viewBox="0 0 300 100"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+>
+  
+  <!-- A simple accent shape (a circle) -->
+  <circle
+      cx="50"
+      cy="50"
+      r="30"
+      fill="#5FB79B"
+  />
+  
+  <!-- "Your Logo" text -->
+  <text
+      x="100"
+      y="55"
+      font-family="Manrope, sans-serif"
+      font-size="52"
+      fill="#333"
+      alignment-baseline="middle"
+  >
+    Your Logo
+  </text>
+</svg>

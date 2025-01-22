@@ -1,0 +1,80 @@
+/* Import Manrope from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+/* Define SCSS variables */
+/* Global styles */
+html,
+body {
+  font-family: "Manrope", sans-serif; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif !important; }
+
+/* Paragraphs and other text elements */
+p {
+  margin: 0.5rem 0;
+  font-family: "Manrope", sans-serif !important; }
+
+strong {
+  font-weight: 700; }
+
+em {
+  font-style: italic; }
+
+code {
+  background-color: #F6F8FA;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace; }
+
+pre {
+  background-color: #F6F8FA;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto; }
+
+/* Buttons (generic) */
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit; }
+  button:hover {
+    background-color: white; }
+
+/* Override secondary button */
+button[kind="secondary"] {
+  background-color: #e9f7f4; }
+  button[kind="secondary"]:hover {
+    background-color: #d6f0eb; }
+
+/* Custom warning button */
+.st-key-warning button {
+  background-color: #dc3545;
+  color: #ffffff; }
+  .st-key-warning button:hover {
+    color: #ffffff;
+    background-color: #d32535; }
+
+/* Checkboxes and radios (generic) */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+  cursor: pointer; }
+
+/* Captions or smaller text */
+.small-text,
+caption {
+  font-size: 0.85rem;
+  color: #295a8e; }
+
+/* Any container or block styling (generic) */
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: #FFFFFF; }

@@ -1,0 +1,107 @@
+/* Import Manrope from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/* Define SCSS variables */
+$primaryColor: #5FB79B;
+$backgroundColor: #FFFFFF;
+$secondaryBackgroundColor: #F6F8FA;
+$textColor: #12283F;
+$fontFamily: 'Manrope', sans-serif;
+
+$secondaryButtonColor: #e9f7f4;
+$warningButtonColor: #dc3545;
+
+/* Global styles */
+html,
+body {
+  font-family: $fontFamily;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+  font-family: $fontFamily !important;
+}
+
+/* Paragraphs and other text elements */
+p {
+  margin: 0.5rem 0;
+  font-family: $fontFamily !important;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  background-color: $secondaryBackgroundColor;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+  background-color: $secondaryBackgroundColor;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+/* Buttons (generic) */
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  &:hover {
+    background-color: lighten($primaryColor, 80%);
+  }
+}
+
+/* Override secondary button */
+button[kind="secondary"] {
+  background-color: $secondaryButtonColor;
+  &:hover {
+    background-color: darken($secondaryButtonColor, 5%);
+  }
+}
+
+/* Custom warning button */
+.st-key-warning button {
+  background-color: $warningButtonColor;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    background-color: darken($warningButtonColor, 5%);
+  }
+}
+
+/* Checkboxes and radios (generic) */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Captions or smaller text */
+.small-text,
+caption {
+  font-size: 0.85rem;
+  color: lighten($textColor, 20%);
+}
+
+/* Any container or block styling (generic) */
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: $backgroundColor;
+}
+
