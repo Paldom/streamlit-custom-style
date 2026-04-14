@@ -1,6 +1,5 @@
+[server]
+enableStaticServing = true
+
 [theme]
-primaryColor="#5FB79B"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F6F8FA"
-textColor="#12283F"
-font="sans serif"
+base = ".streamlit/brand-theme.toml"

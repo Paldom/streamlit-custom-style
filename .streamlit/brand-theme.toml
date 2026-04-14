@@ -1,0 +1,66 @@
+[[theme.fontFaces]]
+family = "Manrope"
+url = "app/static/fonts/Manrope-VariableFont_wght.ttf"
+style = "normal"
+
+[theme]
+base = "light"
+baseFontSize = 16
+baseFontWeight = 400
+showSidebarBorder = true
+
+font = "Manrope, sans-serif"
+headingFont = "Manrope, sans-serif"
+codeFont = "monospace"
+
+primaryColor = "#5FB79B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6F8FA"
+textColor = "#12283F"
+linkColor = "#5FB79B"
+linkUnderline = false
+codeTextColor = "#12283F"
+codeBackgroundColor = "#F6F8FA"
+dataframeHeaderBackgroundColor = "#EEF3F7"
+borderColor = "#D7E2EA"
+dataframeBorderColor = "#D7E2EA"
+showWidgetBorder = true
+baseRadius = "full"
+buttonRadius = "full"
+
+chartCategoricalColors = ["#5FB79B", "#12283F", "#3C6E71", "#E7A83B", "#D96B6B"]
+chartSequentialColors = ["#F0FAF6", "#D8F1E7", "#B9E4D3", "#92D2B8", "#5FB79B"]
+chartDivergingColors = ["#D96B6B", "#F3D6D6", "#F6F8FA", "#D6ECE4", "#5FB79B"]
+
+redColor = "#C14545"
+orangeColor = "#CC7A00"
+yellowColor = "#A87900"
+greenColor = "#228B5D"
+blueColor = "#2F6FDE"
+violetColor = "#7457D8"
+grayColor = "#61707D"
+
+[theme.sidebar]
+backgroundColor = "#12283F"
+secondaryBackgroundColor = "#0F2236"
+textColor = "#F8FAFC"
+linkColor = "#8AD7BF"
+showWidgetBorder = true
+
+[theme.dark]
+primaryColor = "#7CCDB1"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#1A2230"
+textColor = "#F8FAFC"
+linkColor = "#8AD7BF"
+codeTextColor = "#F8FAFC"
+codeBackgroundColor = "#151B24"
+borderColor = "#334155"
+dataframeBorderColor = "#334155"
+showWidgetBorder = true
+
+[theme.dark.sidebar]
+backgroundColor = "#0B1220"
+secondaryBackgroundColor = "#111827"
+textColor = "#F8FAFC"
+linkColor = "#8AD7BF"

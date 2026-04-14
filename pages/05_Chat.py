@@ -1,26 +1,30 @@
 import streamlit as st
 from helpers import init_page
 
-def main():
-    init_page()
+init_page(page_title="Chat Elements")
 
-    st.title("Chat Elements")
-    st.write("Demonstrates chat-like elements (text input, st.chat, etc.)")
+st.title("Chat Elements")
+st.write("Demonstrates native Streamlit chat components, styled by the theme.")
 
-    st.write("**Note**: The built-in Chat interface is in experimental stages in some Streamlit versions.")
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = [
+        {"role": "assistant", "content": "Hello! How can I help you today?"},
+    ]
 
-    # Example chat-like interface:
-    # st.chat_message("Hello, how can I help you today?")
+# Display chat history
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.write(message["content"])
 
-    st.subheader("User Chat Simulation")
-    placeholder = st.empty()
-    user_input = st.text_input("Send a message:")
-    if user_input:
-        placeholder.write(f"**User**: {user_input}")
-        # You can add a response logic from an LLM or your own function
-        placeholder.write("**App**: This is a mock response.")
+# Chat input
+if prompt := st.chat_input("Send a message"):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("user"):
+        st.write(prompt)
 
-    st.write("_Extend this section with your own chat system or AI integration._")
-
-if __name__ == "__main__":
-    main()
+    # Mock response
+    response = "This is a mock response. Replace with your own AI integration."
+    st.session_state.messages.append({"role": "assistant", "content": response})
+    with st.chat_message("assistant"):
+        st.write(response)

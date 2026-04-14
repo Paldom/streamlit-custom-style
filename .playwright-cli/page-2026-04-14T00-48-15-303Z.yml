@@ -1,0 +1,265 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - button "Navigate to home page" [ref=e206] [cursor=pointer]:
+        - img "Logo" [ref=e207]
+      - button "keyboard_double_arrow_left" [ref=e96] [cursor=pointer]:
+        - generic [ref=e98]: keyboard_double_arrow_left
+    - list [ref=e12]:
+      - listitem [ref=e13]:
+        - link "Home" [ref=e15] [cursor=pointer]:
+          - /url: http://localhost:8501/
+          - paragraph [ref=e18]: Home
+      - listitem [ref=e19]:
+        - link "Text" [ref=e21] [cursor=pointer]:
+          - /url: http://localhost:8501/Text
+          - paragraph [ref=e24]: Text
+      - listitem [ref=e25]:
+        - link "Input" [active] [ref=e27] [cursor=pointer]:
+          - /url: http://localhost:8501/Input
+          - paragraph [ref=e30]: Input
+      - listitem [ref=e31]:
+        - link "Data" [ref=e33] [cursor=pointer]:
+          - /url: http://localhost:8501/Data
+          - paragraph [ref=e36]: Data
+      - listitem [ref=e37]:
+        - link "Chart" [ref=e39] [cursor=pointer]:
+          - /url: http://localhost:8501/Chart
+          - paragraph [ref=e42]: Chart
+      - listitem [ref=e43]:
+        - link "Chat" [ref=e45] [cursor=pointer]:
+          - /url: http://localhost:8501/Chat
+          - paragraph [ref=e48]: Chat
+      - listitem [ref=e49]:
+        - link "Status" [ref=e51] [cursor=pointer]:
+          - /url: http://localhost:8501/Status
+          - paragraph [ref=e54]: Status
+    - paragraph [ref=e213]: Hi!
+  - generic [ref=e3]:
+    - banner [ref=e66]:
+      - generic [ref=e69]:
+        - button "Deploy" [ref=e71] [cursor=pointer]:
+          - generic [ref=e73]: Deploy
+        - button "Main menu" [ref=e75] [cursor=pointer]:
+          - img [ref=e76]
+    - generic [ref=e79]:
+      - heading "Input Elements" [level=1] [ref=e218]:
+        - text: Input Elements
+        - generic [ref=e219]:
+          - link "Link to heading":
+            - /url: "#input-elements"
+            - img
+      - paragraph [ref=e224]: This page demonstrates various input widgets in Streamlit.
+      - heading "Buttons" [level=2] [ref=e229]:
+        - text: Buttons
+        - generic [ref=e230]:
+          - link "Link to heading":
+            - /url: "#buttons"
+            - img
+      - paragraph [ref=e235]:
+        - text: Streamlit supports
+        - code [ref=e236]: primary
+        - text: ","
+        - code [ref=e237]: secondary
+        - text: ", and"
+        - code [ref=e238]: tertiary
+        - text: button types natively.
+      - generic [ref=e240]:
+        - button "Primary" [ref=e245] [cursor=pointer]:
+          - paragraph [ref=e249]: Primary
+        - button "Secondary" [ref=e254] [cursor=pointer]:
+          - paragraph [ref=e258]: Secondary
+        - button "Tertiary" [ref=e263] [cursor=pointer]:
+          - paragraph [ref=e267]: Tertiary
+      - paragraph [ref=e272]:
+        - text: Additional keyed variants are styled via scoped CSS (
+        - code [ref=e273]: .st-key-*
+        - text: "):"
+      - generic [ref=e275]:
+        - button "Warning" [ref=e280] [cursor=pointer]:
+          - paragraph [ref=e284]: Warning
+        - button "Success" [ref=e289] [cursor=pointer]:
+          - paragraph [ref=e293]: Success
+        - button "Outline" [ref=e298] [cursor=pointer]:
+          - paragraph [ref=e302]: Outline
+      - heading "Card Container" [level=2] [ref=e307]:
+        - text: Card Container
+        - generic [ref=e308]:
+          - link "Link to heading":
+            - /url: "#card-container"
+            - img
+      - paragraph [ref=e313]: "Use a keyed container for card-like wrappers:"
+      - generic [ref=e315]:
+        - heading "Card example" [level=3] [ref=e320]:
+          - text: Card example
+          - generic [ref=e321]:
+            - link "Link to heading":
+              - /url: "#card-example"
+              - img
+        - paragraph [ref=e326]:
+          - text: This container is styled with
+          - code [ref=e327]: .st-key-card
+          - text: in the CSS.
+      - heading "Text Input" [level=2] [ref=e332]:
+        - text: Text Input
+        - generic [ref=e333]:
+          - link "Link to heading":
+            - /url: "#text-input"
+            - img
+      - generic [ref=e335]:
+        - paragraph [ref=e339]: "Enter some text:"
+        - textbox "Enter some text:" [ref=e342]:
+          - /placeholder: ""
+      - paragraph [ref=e347]: "You entered: ``"
+      - heading "Slider" [level=2] [ref=e352]:
+        - text: Slider
+        - generic [ref=e353]:
+          - link "Link to heading":
+            - /url: "#slider"
+            - img
+      - generic [ref=e356]:
+        - paragraph [ref=e360]: "Select a value:"
+        - generic [ref=e361]:
+          - slider "Select a value:" [ref=e365]:
+            - generic:
+              - generic:
+                - paragraph: "50"
+          - generic:
+            - generic:
+              - paragraph: "0"
+            - generic:
+              - paragraph: "100"
+      - paragraph [ref=e371]: "Slider value: 50"
+      - heading "Checkbox" [level=2] [ref=e376]:
+        - text: Checkbox
+        - generic [ref=e377]:
+          - link "Link to heading":
+            - /url: "#checkbox"
+            - img
+      - generic [ref=e380] [cursor=pointer]:
+        - checkbox "Check me!"
+        - paragraph [ref=e385]: Check me!
+      - heading "Radio Buttons" [level=2] [ref=e390]:
+        - text: Radio Buttons
+        - generic [ref=e391]:
+          - link "Link to heading":
+            - /url: "#radio-buttons"
+            - img
+      - generic [ref=e393]:
+        - paragraph [ref=e397]: "Select an option:"
+        - radiogroup "Select an option:" [ref=e398] [cursor=pointer]:
+          - generic [ref=e399]:
+            - radio "Option A" [checked]
+            - paragraph [ref=e404]: Option A
+          - generic [ref=e405]:
+            - radio "Option B"
+            - paragraph [ref=e410]: Option B
+          - generic [ref=e411]:
+            - radio "Option C"
+            - paragraph [ref=e416]: Option C
+      - paragraph [ref=e421]: "Your choice: Option A"
+      - heading "Selectbox" [level=2] [ref=e426]:
+        - text: Selectbox
+        - generic [ref=e427]:
+          - link "Link to heading":
+            - /url: "#selectbox"
+            - img
+      - generic [ref=e429]:
+        - paragraph [ref=e433]: "Pick a color:"
+        - generic [ref=e435]:
+          - generic [ref=e436]:
+            - generic [ref=e437]: Red
+            - combobox "Selected Red. Pick a color:" [ref=e439]
+          - img "open" [ref=e441]
+      - paragraph [ref=e447]: You selected Red
+      - heading "Tabs and Expander" [level=2] [ref=e452]:
+        - text: Tabs and Expander
+        - generic [ref=e453]:
+          - link "Link to heading":
+            - /url: "#tabs-and-expander"
+            - img
+      - generic [ref=e455]:
+        - tablist [ref=e457]:
+          - tab "Tab One" [selected] [ref=e458] [cursor=pointer]:
+            - paragraph [ref=e460]: Tab One
+          - tab "Tab Two" [ref=e461] [cursor=pointer]:
+            - paragraph [ref=e463]: Tab Two
+        - tabpanel "Tab One" [ref=e466]:
+          - paragraph [ref=e472]: Content inside Tab One. Borders and radius follow theme config.
+      - group [ref=e475]:
+        - generic "keyboard_arrow_right Click to expand" [ref=e476] [cursor=pointer]:
+          - generic [ref=e477]:
+            - generic [ref=e479]: keyboard_arrow_right
+            - paragraph [ref=e482]: Click to expand
+      - heading "Additional Inputs" [level=2] [ref=e487]:
+        - text: Additional Inputs
+        - generic [ref=e488]:
+          - link "Link to heading":
+            - /url: "#additional-inputs"
+            - img
+      - button "Download Example" [ref=e491] [cursor=pointer]:
+        - paragraph [ref=e495]: Download Example
+      - generic [ref=e498]:
+        - paragraph [ref=e503]: Form with submit button
+        - button "Submit" [ref=e507] [cursor=pointer]:
+          - paragraph [ref=e511]: Submit
+      - paragraph [ref=e516]:
+        - link "Open a link" [ref=e517] [cursor=pointer]:
+          - /url: https://example.com
+      - paragraph [ref=e523]: Pick a color
+      - generic [ref=e527]:
+        - paragraph [ref=e531]: Pick multiple options
+        - generic [ref=e534]:
+          - generic [ref=e535]:
+            - combobox "Pick multiple options" [ref=e537]
+            - generic: Choose options
+          - img "open" [ref=e539] [cursor=pointer]
+      - generic [ref=e543]:
+        - paragraph [ref=e547]: Select a range
+        - generic [ref=e548]:
+          - slider "Select a range" [ref=e552]:
+            - generic:
+              - generic:
+                - paragraph: "2"
+          - generic:
+            - generic:
+              - paragraph: "0"
+            - generic:
+              - paragraph: "4"
+      - generic [ref=e555]:
+        - paragraph [ref=e559]: Numeric input
+        - generic [ref=e560]:
+          - spinbutton "Numeric input" [ref=e563]: "5"
+          - generic [ref=e564]:
+            - button [ref=e565] [cursor=pointer]:
+              - img [ref=e566]
+            - button [ref=e568] [cursor=pointer]:
+              - img [ref=e569]
+      - generic [ref=e572]:
+        - paragraph [ref=e576]: Pick a date
+        - textbox "Select a date." [ref=e580]:
+          - /placeholder: YYYY/MM/DD
+          - text: 2026/04/14
+        - paragraph: Press the down arrow key to interact with the calendar and select a date. Press the escape button to close the calendar.
+        - paragraph: Selected date is 2026/04/14. Select the second date.
+      - generic [ref=e582]:
+        - paragraph [ref=e586]: Pick a time
+        - generic [ref=e588]:
+          - generic [ref=e589]:
+            - generic [ref=e590]: 02:48
+            - combobox "Selected 02:48. Select a time, 24-hour format." [ref=e592]
+          - img "open" [ref=e594]
+      - generic [ref=e597]:
+        - paragraph [ref=e601]: Enter multiline text
+        - textbox "Enter multiline text" [ref=e604]:
+          - /placeholder: ""
+      - generic [ref=e606]:
+        - paragraph [ref=e610]: Upload a file
+        - region "Upload a file" [ref=e611] [cursor=pointer]:
+          - button "Choose File" [ref=e612]
+          - generic [ref=e613]:
+            - img [ref=e615]
+            - generic [ref=e618]:
+              - generic [ref=e619]: Drag and drop file here
+              - generic [ref=e620]: Limit 200MB per file
+          - button "Browse files" [ref=e622]

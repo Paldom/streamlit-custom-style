@@ -1,0 +1,75 @@
+- generic [ref=e2]:
+  - generic [ref=e6]:
+    - generic:
+      - generic:
+        - img "Logo"
+    - generic:
+      - list:
+        - listitem:
+          - link "Home" [ref=e7] [cursor=pointer]:
+            - /url: http://localhost:8501/
+            - generic:
+              - generic:
+                - paragraph: Home
+        - listitem:
+          - link "Text" [ref=e8] [cursor=pointer]:
+            - /url: http://localhost:8501/Text
+            - generic:
+              - generic:
+                - paragraph: Text
+        - listitem:
+          - link "Input" [ref=e9] [cursor=pointer]:
+            - /url: http://localhost:8501/Input
+            - generic:
+              - generic:
+                - paragraph: Input
+        - listitem:
+          - link "Data" [ref=e10] [cursor=pointer]:
+            - /url: http://localhost:8501/Data
+            - generic:
+              - generic:
+                - paragraph: Data
+        - listitem:
+          - link "Chart" [ref=e11] [cursor=pointer]:
+            - /url: http://localhost:8501/Chart
+            - generic:
+              - generic:
+                - paragraph: Chart
+        - listitem:
+          - link "Chat" [ref=e12] [cursor=pointer]:
+            - /url: http://localhost:8501/Chat
+            - generic:
+              - generic:
+                - paragraph: Chat
+        - listitem:
+          - link "Status" [ref=e13] [cursor=pointer]:
+            - /url: http://localhost:8501/Status
+            - generic:
+              - generic:
+                - paragraph: Status
+    - paragraph [ref=e19]: Hi!
+  - generic [ref=e3]:
+    - banner [ref=e22]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - img "Logo" [ref=e28]
+          - button "keyboard_double_arrow_right" [ref=e30] [cursor=pointer]:
+            - generic [ref=e32]: keyboard_double_arrow_right
+        - generic [ref=e33]:
+          - button "Deploy" [ref=e35] [cursor=pointer]:
+            - generic [ref=e37]: Deploy
+          - button "Main menu" [ref=e39] [cursor=pointer]:
+            - img [ref=e40]
+    - generic [ref=e43]:
+      - heading "Welcome to the Streamlit Custom UI Design showcase app" [level=1] [ref=e48]:
+        - text: Welcome to the Streamlit Custom UI Design showcase app
+        - generic [ref=e49]:
+          - link "Link to heading":
+            - /url: "#welcome-to-the-streamlit-custom-ui-design-showcase-app"
+            - img
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: This is the main page. Use the sidebar to navigate to different pages showcasing text elements, data display, charts, chat widgets, and status messages.
+        - paragraph [ref=e55]:
+          - text: Styling is driven primarily by native theme configuration in
+          - code [ref=e56]: .streamlit/brand-theme.toml
+          - text: ", with a tiny scoped CSS layer for custom component variants."

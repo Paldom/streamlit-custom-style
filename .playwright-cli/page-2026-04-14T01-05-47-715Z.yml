@@ -1,0 +1,56 @@
+- generic [ref=e2]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - img "Logo" [ref=e10]
+      - button "keyboard_double_arrow_left" [ref=e94] [cursor=pointer]:
+        - generic [ref=e96]: keyboard_double_arrow_left
+    - list [ref=e12]:
+      - listitem [ref=e13]:
+        - link "Home" [ref=e15] [cursor=pointer]:
+          - /url: http://localhost:8501/
+          - paragraph [ref=e18]: Home
+      - listitem [ref=e19]:
+        - link "Text" [ref=e21] [cursor=pointer]:
+          - /url: http://localhost:8501/Text
+          - paragraph [ref=e24]: Text
+      - listitem [ref=e25]:
+        - link "Input" [ref=e27] [cursor=pointer]:
+          - /url: http://localhost:8501/Input
+          - paragraph [ref=e30]: Input
+      - listitem [ref=e31]:
+        - link "Data" [ref=e33] [cursor=pointer]:
+          - /url: http://localhost:8501/Data
+          - paragraph [ref=e36]: Data
+      - listitem [ref=e37]:
+        - link "Chart" [ref=e39] [cursor=pointer]:
+          - /url: http://localhost:8501/Chart
+          - paragraph [ref=e42]: Chart
+      - listitem [ref=e43]:
+        - link "Chat" [ref=e45] [cursor=pointer]:
+          - /url: http://localhost:8501/Chat
+          - paragraph [ref=e48]: Chat
+      - listitem [ref=e49]:
+        - link "Status" [ref=e51] [cursor=pointer]:
+          - /url: http://localhost:8501/Status
+          - paragraph [ref=e54]: Status
+    - paragraph [ref=e63]: Hi!
+  - generic [ref=e3]:
+    - banner [ref=e66]:
+      - generic [ref=e69]:
+        - button "Deploy" [ref=e71] [cursor=pointer]:
+          - generic [ref=e73]: Deploy
+        - button "Main menu" [ref=e75] [cursor=pointer]:
+          - img [ref=e76]
+    - generic [ref=e79]:
+      - heading "Welcome to the Streamlit Custom UI Design showcase app" [level=1] [ref=e84]:
+        - text: Welcome to the Streamlit Custom UI Design showcase app
+        - generic [ref=e85]:
+          - link "Link to heading":
+            - /url: "#welcome-to-the-streamlit-custom-ui-design-showcase-app"
+            - img
+      - generic [ref=e89]:
+        - paragraph [ref=e90]: This is the main page. Use the sidebar to navigate to different pages showcasing text elements, data display, charts, chat widgets, and status messages.
+        - paragraph [ref=e91]:
+          - text: Styling is driven primarily by native theme configuration in
+          - code [ref=e92]: .streamlit/brand-theme.toml
+          - text: ", with a tiny scoped CSS layer for custom component variants."

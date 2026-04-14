@@ -1,0 +1,18 @@
+[      50ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8501/Text/_stcore/health:0
+[      50ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8501/Text/_stcore/host-config:0
+[     172ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/Text:0
+[     172ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/Text:0
+[     249ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/static/js/index.RuhrnD1v.js:132
+[     249ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/static/js/index.RuhrnD1v.js:132
+[     254ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/Text:0
+[     254ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/Text:0
+[     262ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/static/js/index.RuhrnD1v.js:49
+[     262ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/static/js/index.RuhrnD1v.js:49
+[     267ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/Text:0
+[     267ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/Text:0
+[     277ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/static/js/index.RuhrnD1v.js:49
+[     277ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/static/js/index.RuhrnD1v.js:49
+[     282ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/Text:0
+[     282ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/Text:0
+[     460ms] [WARNING] Failed to decode downloaded font: http://localhost:8501/app/static/fonts/Manrope-VariableFont_wght.ttf @ http://localhost:8501/Text:0
+[     460ms] [WARNING] OTS parsing error: invalid sfntVersion: 168430090 @ http://localhost:8501/Text:0
