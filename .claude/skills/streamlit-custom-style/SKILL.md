@@ -1,6 +1,9 @@
 ---
 name: streamlit-custom-style
 description: How to custom-style a Streamlit application with a modern, stable theming stack — reusable theme TOML files, self-hosted fonts, light/dark modes, sidebar theming, chart palettes, shared page bootstrap, and scoped CSS for custom component variants. Use this skill PROACTIVELY whenever the user wants to style, theme, brand, or customize the appearance of a Streamlit app — including changing colors, fonts, buttons, sidebar look, dark mode, chart colors, or adding custom CSS. Also use when the user mentions config.toml theming, Streamlit design systems, or asks how to make a Streamlit app look professional/branded. Even if the user only asks about one aspect (e.g. "change the sidebar color"), apply this skill because the answer depends on which styling layer is appropriate.
+license: MIT
+metadata:
+  version: "0.1.0"
 ---
 
 # Streamlit Custom Styling
@@ -114,6 +117,8 @@ chartDivergingColors = ["#D96B6B", "#F3D6D6", "#F6F8FA", "#D6ECE4", "#5FB79B"]
 
 Charts (`st.line_chart`, `st.bar_chart`, etc.) inherit these automatically — no per-chart configuration needed.
 
+**TOML is the right layer only for native Streamlit charts.** If the app uses Plotly, Altair, or Matplotlib directly, those libraries do **not** read `chartCategoricalColors` — they need their own `template` / `theme` configured in Python. In that case, add a small helper (e.g., `chart_themes.py`) that reads the same palette and exposes a Plotly template or Altair theme. Don't preemptively introduce such helpers when the app only uses `st.line_chart` / `st.bar_chart` — that's premature abstraction.
+
 ## Layer 2: Shared bootstrap
 
 Create a single `init_page()` function that every page calls before any visual output. This prevents per-page drift in config, logo, and style loading:
@@ -151,6 +156,7 @@ Key details:
 - Use `st.html()` for CSS injection, not `st.markdown(..., unsafe_allow_html=True)`. It's cleaner and the recommended approach.
 - `st.logo()` supports a separate `icon_image` for the collapsed sidebar state.
 - Every page should call `init_page(page_title="Page Name")` as its first action.
+- **Wire logo and favicon through `init_page()` — don't add a parallel `apply_branding()` or `setup_brand()` bootstrap.** A second entry point invites drift (two places to update fonts, two places to register the logo). If you adopt a new brand asset set, swap the file paths inside `init_page()` and the theme TOML; keep the bootstrap shape.
 
 ## Layer 3: Scoped CSS
 
@@ -206,6 +212,8 @@ These patterns are fragile and break across Streamlit version upgrades:
 - **CSS `@import` for fonts** — use `[[theme.fontFaces]]` in the theme TOML instead.
 - **`st.markdown(..., unsafe_allow_html=True)` for CSS** — use `st.html()`.
 - **Bootstrap or framework injection** — heavy and conflicts with Streamlit's own styles.
+- **A second branding entry point** (e.g., `apply_branding()` alongside `init_page()`) — duplicates responsibility and drifts. Extend `init_page()` instead.
+- **Python-side chart theming for native Streamlit charts** — `st.line_chart` / `st.bar_chart` already read `chartCategoricalColors` from the TOML; wrapping them in a helper is dead weight. Only add a Python chart-theme helper when the app calls Plotly / Altair / Matplotlib directly.
 
 ## File structure
 

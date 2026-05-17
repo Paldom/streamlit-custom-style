@@ -1,5 +1,4 @@
 import streamlit as st
-import time
 from helpers import init_page
 
 init_page(page_title="Status Elements")
@@ -14,12 +13,7 @@ st.warning("This is a warning message!")
 st.error("This is an error message!")
 
 st.subheader("Progress Bar")
-progress_bar = st.progress(0)
-for i in range(101):
-    time.sleep(0.01)
-    progress_bar.progress(i)
+st.progress(75)
 
 st.subheader("Spinner")
-with st.spinner("Loading..."):
-    time.sleep(2)
 st.write("Done!")

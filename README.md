@@ -140,6 +140,24 @@ It covers:
 - Scoped CSS patterns using `.st-key-*` selectors
 - Common pitfalls to avoid (hashed classes, global selectors, `unsafe_allow_html`)
 
+### Install the skill
+
+The skill is published via [skills.sh](https://skills.sh) and works with any agent that supports the [Agent Skills](https://agentskills.io) spec (Claude Code, Cursor, Codex, etc.). Install with:
+
+```bash
+# Install just this skill (per-project)
+npx skills add Paldom/streamlit-custom-style --skill streamlit-custom-style
+
+# Or install globally for all projects
+npx skills add Paldom/streamlit-custom-style --skill streamlit-custom-style -g
+```
+
+List available skills in the repo before installing:
+
+```bash
+npx skills add Paldom/streamlit-custom-style --list
+```
+
 ## Run the app
 
 ```bash
@@ -189,6 +207,9 @@ tests/
 - **Version upgrades may break CSS.** Pin your Streamlit version and run tests before upgrading.
 - **Self-host fonts for privacy.** External font CDNs transmit user IP addresses.
 - **Third-party styling libraries** like `st_yled` can complement this approach but are not required.
+- **Adopt a full brand system only when you actually need it.** A complete brand pack (curated palette + paired type families + logo set + light/dark variants) raises the floor for a polished, on-brand app — but only if that brand is yours. For a generic showcase or internal tool, a simple primary color + one self-hosted font is enough. Don't import another org's design tokens; lift the *structure* (chart palettes in TOML, sidebar/dark variants, scoped CSS) and fill in your own values.
+- **Keep chart styling in TOML for native charts.** `st.line_chart` / `st.bar_chart` / `st.area_chart` pick up `chartCategoricalColors` automatically. Only add a Python chart-theme helper (e.g. a Plotly template) when the app calls Plotly, Altair, or Matplotlib directly — and have it read from the same palette to keep one source of truth.
+- **One branding entry point.** Logos and favicons go through `init_page()` + `st.logo()`. Don't introduce a parallel `apply_branding()` bootstrap — swap asset paths inside `init_page()` instead.
 
 ## Future direction
 
